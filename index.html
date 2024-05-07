@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width = device-width, initial-scale = 1" name="viewport">
+    <meta content="caesar cipher" name="description">
+    <title>Caesar Cipher</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="section">
+        <!-- Title of the application -->
+        <h1 class="title">Cryptic Cipher</h1>
+        <!-- Button to activate the Caesar cipher -->
+        <button class="btn active" id="caesar-cipher">Caesar</button>
+        <!-- Button to activate the Vigenère cipher -->
+        <button class="btn" id="vigenere-cipher">Vigenère</button>
+        <!-- Form for input and controls -->
+        <form class="form">
+            <!-- Fieldset grouping related elements -->
+            <fieldset class="fieldset">
+                <div class="plain-text-field">
+                    <!-- Label and textarea for input text -->
+                    <label for="caesar-text">Enter Text</label>
+                    <textarea id="caesar-text" placeholder="Enter text here" required></textarea>
+                </div>
+                <!-- Input for the Caesar cipher shift key -->
+                <div class="caesar-section">
+                    <label for="shift-key">Shift Key</label>
+                    <input id="shift-key" name="shift-num" placeholder="3" required type="number">
+                </div>
+                <!-- Input for the Vigenère cipher word key, initially hidden -->
+                <div class="vigenere-section hide">
+                    <label for="vigenere-key">Word Key</label>
+                    <input class="word-key" id="vigenere-key" name="vigenere-key" placeholder="Hello" required
+                           type="text">
+                </div>
+            </fieldset>
+            <!-- Buttons to trigger encryption or decryption -->
+            <button class="btn" id="encrypt-btn" type="button">Encrypt</button>
+            <button class="btn" id="decrypt-btn" type="button">Decrypt</button>
+        </form>
+        <!-- Display area for the encrypted or decrypted text -->
+        <label for="formated-text"><span class="name-cipher">Encrypted</span> Text</label>
+        <textarea class="cipher-holder" disabled id="formated-text"></textarea>
+    </section>
+
+    <!-- Link javascript-->
+    <script src="script.js"></script>
+</body>
+</html>

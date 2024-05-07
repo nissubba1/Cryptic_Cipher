@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 3rem;
+    font-family: "Pixelify Sans", Sans-serif, serif;
+    background-color: #0f0e17;
+}
+
+.section {
+    width: 60%;
+    background-color: #e53170;
+    text-align: center;
+    margin: 10rem auto 0;
+    padding: 5rem;
+}
+
+.title {
+    font-size: 7rem;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.fieldset {
+    border: none;
+}
+
+label {
+    padding: 4rem 0 1rem;
+    display: block;
+    font-size: 3rem;
+}
+
+textarea {
+    text-align: left;
+    padding: 2rem;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #0f0e17;
+    color: white;
+    width: 100%;
+    max-width: 70rem;
+    height: 15rem;
+}
+
+textarea::placeholder, input::placeholder {
+    color: #a7a9be;
+}
+
+.btn {
+    width: auto;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    background-color: #0f0e17;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    margin: 2rem 1rem;
+    font-family: "Pixelify Sans", Sans-serif, serif;
+}
+
+.active {
+    background-color: #fffffe;
+    color: #000;
+}
+
+.btn:hover {
+    background-color: #ff8906;
+}
+
+input {
+    font-size: 2rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    width: 10rem;
+    background-color: #0f0e17;
+    color: white;
+}
+
+
+.word-key {
+    width: 40%;
+    max-width: 30rem;
+}
+
+.hide {
+    display: none;
+}
+
+/*Iphone*/
+@media (max-width: 500px) {
+    body {
+        font-size: 2rem;
+    }
+
+    .section {
+        width: 100%;
+        margin: 0 auto;
+        padding: 3rem;
+        height: 100vh;
+    }
+
+    input, label, textarea {
+        padding: 1rem;
+    }
+
+    textarea {
+        height: 8rem;
+    }
+
+
+}
+
+/*Ipad Vertical Mode*/
+@media (max-width: 840px) and (min-width: 501px) {
+    body {
+        font-size: 4rem;
+    }
+
+    .section {
+        width: 100%;
+        margin: 0 auto;
+        padding: 10rem 3rem 3rem 3rem;
+        height: 100vh;
+    }
+
+    input, label, textarea {
+        padding: 3rem;
+    }
+
+    textarea {
+        height: 15rem;
+    }
+
+    .btn {
+        font-size: 3rem;
+    }
+}
+
+/*Ipad Horizontal Mode*/
+@media (max-width: 1200px) and (min-width: 841px) {
+    body {
+        font-size: 4rem;
+    }
+
+    .section {
+        width: 100%;
+        margin: 0 auto;
+        padding: 3rem;
+        height: 100vh;
+    }
+
+    input, label, textarea {
+        padding: 3rem;
+    }
+
+    textarea {
+        height: 12rem;
+    }
+
+    .fieldset {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+}
+
