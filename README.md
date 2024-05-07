@@ -2,7 +2,7 @@
 
 <img src="images/cryptic_cipher_ss.png" alt="Screenshot of the website, Cryptic Cipher" width="1000">
 
-## Please try it by clicking, <a href="https://nissubba1.github.io/Cryptic_Cipher/" target="_blank">HERE</a>
+## Please try it by clicking, <a href="https://nissubba1.github.io/Cryptic_Cipher/">HERE</a>
 
 Cryptic Cipher is a user-friendly website designed for encryption and decryption using classic cipher methods: Caesar
 Cipher and Vigenère Cipher. It provides a sleek interface built with HTML, CSS, and JavaScript, enabling users to
